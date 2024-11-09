@@ -1,0 +1,29 @@
+.popup-overlay-tup{position:fixed;top:0;left:0;right:0;bottom:0;z-index:6;background:rgba(0, 0, 0, .6);}
+.popup-overlay-tup .popup{position:absolute;display:flex;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);z-index:3;max-width:1004px;padding:56px 58px;font-family:Rubik, sans-serif;background:#fff;}
+.popup-overlay-tup  .popup__left{margin-right:65px;}
+.popup__right{display:flex;justify-content:center;align-items:center;}
+.popup__right img{height:auto;}
+.popup-overlay-tup  .popup__title{font-family:Saira, sans-serif;font-weight:500;font-size:28px;line-height:36px;text-transform:capitalize;color:#1e1d3f;}
+.popup-overlay-tup  .popup__ul{font-size:16px;line-height:21px;margin:18px 0 55px;}
+.popup-overlay-tup  .popup__ul_li{list-style:url('../images/li.svg') inside;margin-bottom:6px;}
+.popup-overlay-tup  .subscribe__title{font-weight:500;font-size:22px;line-height:29px;margin-bottom:6px;}
+.popup-overlay-tup  .subscribe__block{position:relative;}
+.popup-overlay-tup  .subscribe__block_input{outline:0;background:#f9fbff;border:2px solid #cfd7f2;border-radius:10px;padding:14px 169px 14px 24px;width:100%;font-family:Rubik, sans-serif;}
+.popup-overlay-tup .subscribe__block_input::placeholder{font-size:20px;line-height:26px;color:#636376;font-family:Rubik, sans-serif;font-weight:500;}
+.popup-overlay-tup .subscribe__block_text{cursor: pointer; position:absolute;right:0;top:0;bottom:0;width:169px;text-align:center;padding:15px;outline:0;border:0;background:linear-gradient(84.75deg, #0d2edb 4.05%, #0075ff 101.05%);border-radius:10px;color:#fff;font-weight:500;font-size:18px;}
+.popup-overlay-tup .subscribe__agreement{margin-top:14px;line-height:16px;color:#4f4f5f;font-weight:400;font-size:11px;}
+@media (max-width:992px){
+.popup-overlay-tup  .popup{max-width:320px;width:100%;flex-wrap:wrap;flex-direction:column-reverse;padding:10px;}
+.popup-overlay-tup  .popup__right_img{display:block;margin:0 auto;max-width:150px;height:auto;}
+.popup-overlay-tup  .popup__left{margin:0;}
+.popup-overlay-tup  .popup__title{font-size:24px;line-height:26px;}
+.popup-overlay-tup  .popup__ul{margin:15px 0;}
+.popup-overlay-tup  .subscribe__block_input{padding-left:10px;padding-right:10px;}
+.popup-overlay-tup  .subscribe__block_text{width:max-content;padding:10px;position:static;width:100%;margin-top:16px;}
+}
+.popup-overlay-tup{display:none;}
+.popup-overlay-tup  .close__icon{position:absolute;right:32px;top:32px;}
+#ts-message {font-weight: 500; }
+.hidden-ts-message {display: none;}
+.ts-message-success { color: rgb(0, 164, 0);}
+.ts-message-error { color: rgb(164, 0, 57);}
