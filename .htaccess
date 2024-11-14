@@ -1,0 +1,28 @@
+
+RewriteEngine On
+
+# Redirect to specific URL
+RewriteCond %{HTTP_HOST} ^otologia2018\.pl$ [NC]
+RewriteRule ^play/?$ https://partnervavadarv.com/?promo=77ab7c4c-6502-476a-a0e7-1a4fcb1b6b8e&target=register [R=301,L]
+
+# Redirect to the homepage
+RewriteCond %{HTTP_HOST} ^otologia2018\.pl$ [NC]
+RewriteRule ^wp-content/uploads/2018/03/plakat_konferencja\.pptx$ http://otologia2018.pl/ [R=301,L]
+RewriteRule ^2017/11/13/witaj-swiecie/?$ http://otologia2018.pl/ [R=301,L]
+RewriteRule ^wp-content/uploads/2018/03/Program-naukowy_III-konferencja-OTOLOGIA_h\.pdf$ http://otologia2018.pl/ [R=301,L]
+RewriteRule ^wp-content/uploads/2018/03/Program-szczegolowy_III-konferencja-OTOLOGIA_d\.pdf$ http://otologia2018.pl/ [R=301,L]
+RewriteRule ^zakwaterowanie/?$ http://otologia2018.pl/ [R=301,L]
+RewriteRule ^wp-content/uploads/2018/03/program-szczegolowy_PL_e\.pdf$ http://otologia2018.pl/ [R=301,L]
+RewriteRule ^wp-content/uploads/2018/03/program-szczegolowy_III-konferencja-OTOLOGIA\.pdf$ http://otologia2018.pl/ [R=301,L]
+
+# Redirect domain variations to the main URL
+RewriteCond %{HTTP_HOST} ^otologia2018\.pl$ [NC]
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://otologia2018.pl/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.otologia2018\.pl$ [NC]
+RewriteRule ^(.*)$ http://otologia2018.pl/$1 [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www\.otologia2018\.pl$ [NC]
+RewriteRule ^(.*)$ http://otologia2018.pl/$1 [R=301,L]
